@@ -1,0 +1,102 @@
+@use '/resources/scss/common/variables';
+@use "/resources/scss/common/mixins";
+
+.header-fixed {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.10);
+    background: #FFFFFF;
+    z-index: 100;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+    color: #ffffff;
+
+    &-content{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &-logo{
+        width: 250px;
+        height: 60px;
+        padding: 16px 32px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+    }
+
+    &-menu{
+        height: 60px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            column-gap: 28px;
+        }
+        li{
+            margin-bottom: 0;
+        }
+    }
+
+    &-contacts{
+        padding: 9px 56px 9px 49px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 4px;
+
+        &__icon{
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+
+        .phone-more{
+            position: absolute;
+            top: 50%;
+            right: 18px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: variables.$time;
+
+            &.active{
+                transform:  translateY(-50%) rotate(-180deg);
+            }
+        }
+    }
+}
+.phone{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    white-space: nowrap;
+
+    &__additional{
+        display: none;
+    }
+}
+.mail{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 10%;
+    text-decoration-skip-ink: auto;
+}

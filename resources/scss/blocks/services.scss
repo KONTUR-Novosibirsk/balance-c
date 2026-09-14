@@ -1,0 +1,48 @@
+@use "/resources/scss/common/variables";
+
+.services{
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    &-item{
+        padding: 29px;
+        position:relative;
+        display: flex;
+        flex-direction: column;
+
+        &__number{
+            font-weight: 700;
+            font-size: 25px;
+            line-height: 120%;
+            color: variables.$AdditionalColorText;
+            position: absolute;
+            top: 28px;
+            right: 28px;
+        }
+        &__img{
+            width: 190px;
+            height: 160px;
+            margin-bottom: 24px;
+            margin-right: 28px;
+            border: 1px solid red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &__link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 4px;
+            padding: 4px;
+            background: variables.$AdditionalColorText;
+            margin-top: auto;
+        }
+    }
+}

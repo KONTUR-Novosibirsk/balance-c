@@ -1,0 +1,14 @@
+@use "/resources/scss/common/variables";
+
+.banner{
+    padding: 266px 0 459px;
+    color: #ffffff;
+
+    &-content{
+        max-width: 720px;
+        p{
+            font-size: 20px;
+            color: #ffffff;
+        }
+    }
+}

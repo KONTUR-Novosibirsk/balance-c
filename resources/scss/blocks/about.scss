@@ -1,0 +1,58 @@
+@use '/resources/scss/common/variables';
+
+.about {
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 420px 420px;
+    gap: 24px;
+
+    &__first{
+        border-radius: 12px;
+        padding: 28px;
+        color: #ffffff;
+        background: linear-gradient(229.5deg, #53250A 4.61%, #B95216 97.75%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        p{
+            color: #ffffff;
+            margin-bottom: 0;
+        }
+    }
+
+    &__second{
+        background: #1D1714;
+        border-radius: 12px;
+        padding: 28px;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+
+        h4{
+            margin-bottom: auto;
+        }
+        &-steps{
+            display: flex;
+            gap: 53px;
+            margin-top: 24px;
+            margin-bottom: 8px;
+        }
+    }
+
+    &__third{
+        img{
+            width: 100%;
+            height: 190px;
+            border-radius: 12px;
+            margin-bottom: 24px;
+            object-fit: cover;
+        }
+
+        h4{
+            margin-bottom: 0;
+        }
+    }
+}

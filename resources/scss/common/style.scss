@@ -1,0 +1,276 @@
+@use 'mixins';
+@use 'variables';
+
+// Обнуление стилей
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+.fancybox-slide--html,
+.fancybox__slide--html {
+    padding: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+svg{
+    flex-shrink: 0;
+}
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.container {
+    @include mixins.Container
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.wrapper.page-content footer {
+    margin-top: 60px;
+}
+
+body {
+    font-family: variables.$FontFamily;
+    color: variables.$MainColorText;
+}
+
+html.lock {
+    overflow: hidden;
+}
+section{
+    margin-bottom: 120px;
+}
+h1 {
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 1.3888;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    text-indent: 122px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-family: variables.$FontFamily;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+h4 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+h5 {
+    font-family: variables.$FontFamily;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+h6 {
+    font-family: variables.$FontFamily;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #000;
+    margin-bottom: 24px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    color: variables.$SecondColorText;
+    margin-bottom: 24px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 24px;
+
+    li {
+        margin-bottom: 10px;
+    }
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 8px;
+    padding: 12px 12px 12px 24px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: variables.$ButtonColor;
+}
+.section-heading{
+    display: grid;
+    grid-template-columns: 255px 1fr;
+    align-items: flex-start;
+
+    h2{
+        max-width: 992px;
+        margin-bottom: 32px;
+    }
+
+}
+.section-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1%;
+    text-transform: uppercase;
+    color: variables.$AdditionalColorText;
+
+    &:before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        background: variables.$AdditionalColorText;
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-family: variables.$FontFamily;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: #000;
+        margin-bottom: 24px;
+    }
+}
