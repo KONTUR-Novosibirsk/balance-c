@@ -38,55 +38,50 @@
                         <span>Договор</span>
                         <span>Старт работы</span>
                     </div>
-                    <div>
-                        <svg width="380" height="40" viewBox="0 0 380 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g clip-path="url(#clip0_4_463)">
-                                <rect width="6.09" height="40" rx="3.045" fill="#FE7940"/>
-                                <rect x="10.09" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="20.2" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="30.29" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="40.4" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="50.5" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="60.61" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="70.7" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="80.8101" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="90.9" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="101.01" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="121.2" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="111.11" width="6.09" height="40" rx="3.045" fill="#FE7940"/>
-                                <rect x="131.31" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="141.42" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="151.51" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="161.62" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="171.72" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="181.82" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="191.92" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="202.03" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="232.32" width="6.11" height="40" rx="3.055" fill="#FE7940"/>
-                                <rect x="222.23" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="252.43" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="242.43" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="212.12" width="6.11" height="40" rx="3.055" fill="#2F2724"/>
-                                <rect x="262.64" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="272.73" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="282.82" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="292.92" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="303.01" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="313.11" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="323.2" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="333.29" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="343.39" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="353.48" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="363.57" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                                <rect x="373.67" width="6.09" height="40" rx="3.045" fill="#2F2724"/>
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_4_463">
-                                    <rect width="379.77" height="40" fill="white"/>
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
+                   <div class="progress-bar">
+                       <div class="progress-bar__items">
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                       </div>
+                       <div class="progress-bar__items">
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                       </div>
+                       <div class="progress-bar__items">
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                           <div></div>
+                       </div>
+                   </div>
                 </div>
                 <div class="about-content__third">
                     <img src="{{iblock()->getById(3)?->elements[2]->image()?->getPreview()}}" alt="">

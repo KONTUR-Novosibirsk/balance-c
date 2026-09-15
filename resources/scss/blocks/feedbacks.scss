@@ -62,3 +62,10 @@
     margin-top: 19px;
     color: rgba(255,255,255,0.8);
 }
+
+
+@media (max-width: 768px) {
+    .feedback-popup__items{
+        grid-template-columns: 1fr;
+    }
+}

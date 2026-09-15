@@ -24,18 +24,22 @@
 .footer-content {
     background: #1D1714;
     border-radius: 20px;
-    padding: 50px 0 198px;
+    padding: 50px 10px 198px;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 .footer-icon{
     position: absolute;
     bottom: 16px;
     left: 20px;
+    z-index: -1;
 }
 .footer-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 32px;
 }
 .footer-logo{
     width: 187px;

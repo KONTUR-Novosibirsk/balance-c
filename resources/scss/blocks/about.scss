@@ -27,20 +27,19 @@
     }
 
     &__second{
-        display: none;
         background: #1D1714;
         border-radius: 12px;
         padding: 28px;
         color: #ffffff;
-        //display: flex;
+        display: flex;
         flex-direction: column;
 
         h4{
             margin-bottom: auto;
         }
         &-steps{
-            display: flex;
-            gap: 53px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
             margin-top: 70px;
             margin-bottom: 8px;
         }
@@ -57,6 +56,30 @@
 
         h4{
             margin-bottom: 0;
+        }
+    }
+}
+.progress-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 40px;
+    gap: 4px;
+
+    &__items{
+        flex: 1;
+        display: flex;
+        gap: 4px;
+        min-width: 0;
+
+        div{
+            flex: 1;
+            background: #2F2724;
+            border-radius: 10px;
+            min-width: 0;
+
+            &:first-child{
+                background: #FE7940;
+            }
         }
     }
 }
