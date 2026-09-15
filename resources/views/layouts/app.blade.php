@@ -29,7 +29,8 @@
         <div class="container header__container">
             <div class="header-content">
                 <a href="{{ route('index') }}" class="header-logo">
-                    <img src="{{ asset('/images/logo.svg') }}" alt="logo">
+                    <img src="{{ asset('/images/logo.svg') }}" alt="logo" class="white-logo">
+                    <img src="{{ asset('/images/logo-dark.svg') }}" alt="logo" class="dark-logo">
                 </a>
                 <nav class="header-menu">
                     <x-menu::base-menu-component code="main" parent-css="menu"/>

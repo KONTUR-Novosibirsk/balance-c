@@ -30,6 +30,10 @@
         padding: 16px 32px;
         background: rgba(255, 255, 255, 0.1);
         border-radius: 4px;
+
+        .dark-logo{
+            display: none;
+        }
     }
 
     &-menu{
@@ -103,9 +107,45 @@
     font-weight: 400;
     font-size: 16px;
     line-height: normal;
-    letter-spacing: 0%;
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-thickness: 10%;
     text-decoration-skip-ink: auto;
+}
+.page-content{
+    .header{
+        position: static;
+        color: variables.$MainColorText;
+    }
+    .header-logo{
+        background: rgba(198, 198, 198, 0.1);
+        .white-logo{
+            display: none;
+        }
+
+        .dark-logo{
+            display: block;
+        }
+    }
+    .header-menu{
+        background: rgba(198, 198, 198, 0.1);
+    }
+    .header-contacts{
+        background: rgba(198, 198, 198, 0.1);
+
+    }
+    .header-contacts__icon{
+        svg{
+            path{
+                fill: variables.$MainColorText;
+            }
+        }
+    }
+    .phone-more{
+        svg{
+            path{
+                stroke: variables.$MainColorText;
+            }
+        }
+    }
 }
