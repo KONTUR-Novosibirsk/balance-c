@@ -120,7 +120,6 @@ h2 {
     font-weight: 600;
     font-size: 48px;
     line-height: 60px;
-    text-indent: 122px;
     text-transform: uppercase;
     margin-bottom: 24px;
 }
@@ -197,6 +196,7 @@ ul {
     h2{
         max-width: 992px;
         margin-bottom: 32px;
+        text-indent: 122px;
     }
 
 }

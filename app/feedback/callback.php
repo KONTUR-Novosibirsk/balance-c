@@ -9,12 +9,12 @@ return [
             'placeholder' => 'Ваше имя',
             'rules' => 'required|string|max:250',
         ],
-        'email' => [
-            'type' => 'input',
-            'label' => 'Email',
-            'placeholder' => 'Ваш email',
-            'rules' => 'required|email',
-        ],
+//        'email' => [
+//            'type' => 'input',
+//            'label' => 'Email',
+//            'placeholder' => 'Ваш email',
+//            'rules' => 'required|email',
+//        ],
         'phone' => [
             'type' => 'phone',
             'label' => 'Телефон',

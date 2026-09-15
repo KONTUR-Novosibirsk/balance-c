@@ -157,7 +157,18 @@
         @yield('app.content')
     </main>
     <footer class="footer">
-        <div class="footer__container container">
+        <div class="container">
+            <div class="footer-feedback">
+                <div class="footer-feedback__heading">
+                    {!! settings('feedback') !!}
+                </div>
+                <div id="footer-feedback" class="vue_app">
+                    <feedback-form-component
+                        privacy-policy-link="{{ route('page.show', settings('policy_page', default: 1)) }}"
+                        agreement-link="{{ route('page.show', settings('agreement_page', default: 1)) }}"
+                        personal-data-link="{{ route('page.show', settings('personal_page', default: 1)) }}"></feedback-form-component>
+                </div>
+            </div>
             <div class="footer-content">
                 <div class="footer-content_top">
                     <div class="footer-logo">
@@ -510,6 +521,19 @@
             </div>
         </div>
     </footer>
+    <div id="cookieee">
+        <form method="POST" action="{{ route('cookie.accept') }}">
+            @csrf
+            @method('POST')
+            <p>Мы используем cookie-файлы
+                <a href="{{ route('page.show', settings('policy_page', default: 1)) }}">
+                    подробнее
+                </a>.
+            </p>
+            <input type="hidden" name="accepted_all" value="1">
+            <button type="submit" id="cookieee__apply">Принять</button>
+        </form>
+    </div>
     <div id="feedback-popup" style="display: none;" class="vue_app">
         <feedback-form-component
                 privacy-policy-link="{{ route('page.show', settings('policy_page', default: 1)) }}"></feedback-form-component>

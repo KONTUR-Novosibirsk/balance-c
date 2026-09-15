@@ -1,11 +1,13 @@
 @use '/resources/scss/common/variables';
 
 .footer {
-    background: variables.$SecondColorText;
-    padding: 40px 0 15px;
-    &__container {
-    }
+    background: no-repeat top center/cover url("/public/images/footer-bg.jpg");
+    padding: 20px;
+    color: #ffffff;
 
+    p{
+        color: #ffffff;
+    }
     h5 {
         font-size: 18px;
         font-family: variables.$FontFamily;
@@ -16,7 +18,17 @@
         color: #FFF;
     }
 }
-.container {
+.footer-feedback{
+    max-width: 925px;
+    margin: 60px auto 78px;
+
+    &__heading{
+        p{
+            max-width: 732px;
+            font-size: 18px;
+            margin: 0 auto 24px;
+        }
+    }
 }
 .footer-content {
     &_top {

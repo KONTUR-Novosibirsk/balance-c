@@ -12,9 +12,9 @@
                 <label :for="forName" class="custom-checkbox">
                   <span class="checkbox-box">
                     <span v-if="modelValue" class="checkbox-checkmark">
-                        <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9.39364 1.0603L3.83808 6.89364L1.0603 3.97697M9.39351 1.0603L3.83796 6.89364" stroke="#3C464B" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/>
-                        </svg>
+                       <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 6L6 11L14.3333 1" stroke="#1D1714" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                       </svg>
                     </span>
                   </span>
                     <span class="checkbox-label" v-html="label"></span>
@@ -57,8 +57,8 @@ export default {
 .hidden-checkbox {
     position: absolute;
     opacity: 0;
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     cursor: pointer;
 }
 
@@ -68,22 +68,21 @@ export default {
 
 .custom-checkbox {
     display: flex !important;
-    align-items: center;
     cursor: pointer;
     user-select: none;
 }
 
 .checkbox-box {
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     display: flex;
     align-items: center;
     flex-shrink: 0;
     justify-content: center;
     margin-right: 12px;
-    border-radius: 5px;
-    background-color: white;
-    border: 1px solid #FFD900;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
     transition: background 0.2s, border-color 0.2s;
 }
 
@@ -93,21 +92,9 @@ export default {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background: #FFD900;
+    background: #ffffff;
     height: 100%;
 }
-
-.checkbox-label {
-    font-size: 14px;
-    color: #202020;
-    line-height: 140%;
-
-    a {
-        color: #202020 !important;
-        text-decoration: underline !important;
-    }
-}
-
 .invalid-feedback {
     color: red;
     font-size: 0.875em;

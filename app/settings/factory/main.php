@@ -72,10 +72,40 @@ return [
                 return $data ?? [];
             }
         ],
-        'slogan' => [
-            'name' => 'Слоган сайта',
+        'agreement_page' => [
+            'name' => 'Согласие на обработку персональных данных',
+            'type' => 'select',
+            'rules' => 'nullable',
+            'data' => function () {
+                $pages = \Modules\Pages\App\Models\Page::query()->get();
+                foreach ($pages as $page) {
+                    $data[] = [
+                        'key' => $page->alias,
+                        'value' => $page->title,
+                    ];
+                }
+                return $data ?? [];
+            }
+        ],
+        'personal_page' => [
+            'name' => 'Политика обработки персональных данных',
+            'type' => 'select',
+            'rules' => 'nullable',
+            'data' => function () {
+                $pages = \Modules\Pages\App\Models\Page::query()->get();
+                foreach ($pages as $page) {
+                    $data[] = [
+                        'key' => $page->alias,
+                        'value' => $page->title,
+                    ];
+                }
+                return $data ?? [];
+            }
+        ],
+        'feedback' => [
+            'name' => 'ФОС',
             'type' => 'editor',
-            'placeholder' => 'Слоган сайта',
+            'placeholder' => 'ФОС',
             'rules' => 'string|max:500|nullable',
         ],
 
