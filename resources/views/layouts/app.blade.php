@@ -58,101 +58,37 @@
                         <a href="mailto:{{settings('emailPublic')}}" class="mail">{{settings('emailPublic')}}</a>
                     </div>
                 </div>
+                <div class="header-burger">
+                    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.249219 0.327674C0.313672 0.25869 0.459766 0.159526 0.580078 0.103476L0.794922 0H21.2051L21.4199 0.103476C21.5359 0.159526 21.6863 0.25869 21.7508 0.327674C21.8152 0.396659 21.8969 0.526004 21.9312 0.612234C21.9699 0.702775 22 0.853678 22 0.948531C22 1.04338 21.9699 1.19429 21.9312 1.28052C21.8969 1.37106 21.8152 1.5004 21.7508 1.56939C21.6863 1.63837 21.5574 1.72891 21.4629 1.77203C21.2953 1.84964 20.9258 1.85395 10.9871 1.85395C0.936719 1.85395 0.683203 1.85395 0.528516 1.77203C0.438281 1.7246 0.313672 1.63406 0.249219 1.56508C0.184766 1.5004 0.103125 1.37106 0.06875 1.28052C0.0300781 1.19429 0 1.04338 0 0.948531C0 0.853678 0.0300781 0.702775 0.06875 0.612234C0.103125 0.526004 0.184766 0.396659 0.249219 0.327674Z" fill="white"/>
+                        <path d="M0.348047 7.29076C0.429688 7.2304 0.562891 7.1571 0.644531 7.13123C0.760547 7.08812 3.01211 7.07518 10.9785 7.07518C17.2992 7.07518 21.218 7.08812 21.3125 7.11399C21.3941 7.13554 21.5316 7.20022 21.6133 7.25626C21.6949 7.31231 21.8152 7.45028 21.8797 7.571C21.9527 7.70035 22 7.85125 22 7.95473C22 8.04958 21.9785 8.19617 21.9527 8.27809C21.9227 8.36432 21.8496 8.49798 21.7895 8.5799C21.7293 8.66182 21.5789 8.77392 21.248 8.92482H0.751953L0.537109 8.82565C0.416797 8.7696 0.275 8.67044 0.223437 8.60145C0.167578 8.53247 0.0945313 8.40744 0.0601562 8.32121C0.0257812 8.23929 0 8.0927 0 7.99784C0 7.90299 0.0472656 7.73053 0.0988281 7.60981C0.154687 7.48909 0.262109 7.35112 0.348047 7.29076Z" fill="white"/>
+                        <path d="M0.223437 14.4608C0.300781 14.3746 0.442578 14.2668 0.537109 14.2237C0.700391 14.1504 1.15156 14.1461 11 14.1461C20.9258 14.1461 21.2953 14.1461 21.4629 14.2237C21.5574 14.2711 21.6863 14.3616 21.7508 14.4306C21.8152 14.4953 21.8969 14.6246 21.9312 14.7152C21.9699 14.8014 22 14.9566 22 15.0601C22 15.1593 21.9613 15.3188 21.9184 15.4136C21.8754 15.5085 21.7723 15.6508 21.6863 15.7284C21.5961 15.806 21.4543 15.8965 21.3641 15.9353C21.2223 15.9914 20.0449 16 11 16C1.95508 16 0.777734 15.9914 0.631641 15.9353C0.545703 15.8965 0.403906 15.806 0.313672 15.7284C0.227734 15.6508 0.124609 15.5085 0.0816406 15.4136C0.0386719 15.3188 0 15.1765 0 15.0903C0 15.0084 0.0214844 14.8661 0.0429688 14.7798C0.06875 14.6893 0.150391 14.547 0.223437 14.4608Z" fill="white"/>
+                    </svg>
+                </div>
             </div>
         </div>
     </header>
     <div class="burger-menu">
         <div class="burger-menu__top">
-            <a href="" class="burger-menu__link">
-                <img src="{{ asset('/images/logo.svg') }}" alt="" class="burger-menu__logo">
-            </a>
             <div class="burger-menu__close">
-                <img src="{{ asset('/images/catalog-menu__close.svg') }}" alt="">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="2.21997" y="0.000579834" width="24" height="2.00001" transform="rotate(45 2.21997 0.000579834)" fill="#FE7940"/>
+                    <rect x="0.810059" y="16.9706" width="24" height="2.00001" transform="rotate(-45 0.810059 16.9706)" fill="#FE7940"/>
+                </svg>
             </div>
         </div>
         <div class="burger-menu__content">
-            <div class="burger-menu__heading">Меню</div>
             <nav class="burger-menu__list">
-                <x-menu::base-menu-component code="catalog" parent-css="menu"/>
-            </nav>
-        </div>
-        <div class="burger-menu__shadow"></div>
-    </div>
-    <div class="catalog-menu">
-        <div class="catalog-menu__top">
-            <a href="{{ route('index') }}" class="catalog-menu__link">
-                <img src="{{ asset('/images/logo.svg') }}" alt="" class="catalog-menu__logo">
-            </a>
-            <div class="catalog-menu__close">
-                <img src="{{ asset('/images/catalog-menu__close.svg') }}" alt="">
-            </div>
-            <div class="catalog-menu__search">
-                <form action="{{ route('shop.search') }}">
-                    <input type="text" name="search" placeholder="Поиск по каталогу">
-                    <button type="submit">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <g id="&#208;&#152;&#208;&#186;&#208;&#190;&#208;&#189;&#208;&#186;&#208;&#184;">
-                                <path id="Vector"
-                                      d="M26.25 26.25L18.75 18.75M21.25 12.5C21.25 13.6491 21.0237 14.7869 20.5839 15.8485C20.1442 16.9101 19.4997 17.8747 18.6872 18.6872C17.8747 19.4997 16.9101 20.1442 15.8485 20.5839C14.7869 21.0237 13.6491 21.25 12.5 21.25C11.3509 21.25 10.2131 21.0237 9.15152 20.5839C8.08992 20.1442 7.12533 19.4997 6.31282 18.6872C5.5003 17.8747 4.85578 16.9101 4.41605 15.8485C3.97633 14.7869 3.75 13.6491 3.75 12.5C3.75 10.1794 4.67187 7.95376 6.31282 6.31282C7.95376 4.67187 10.1794 3.75 12.5 3.75C14.8206 3.75 17.0462 4.67187 18.6872 6.31282C20.3281 7.95376 21.25 10.1794 21.25 12.5Z"
-                                      stroke="#5065CE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </g>
-                        </svg>
-                    </button>
-                </form>
-            </div>
-        </div>
-        <div class="catalog-menu__content">
-            <div class="catalog-menu__heading">Каталог</div>
-            <nav class="mobile-catalog__menu">
-                <x-menu::base-menu-component code="catalog" parent-css="menu"/>
-            </nav>
-        </div>
-    </div>
-    <div class="modal-menu">
-        <div class="modal-menu__top">
-            <a href="" class="modal-menu__link">
-                <img src="{{ asset('/images/logo.svg') }}" alt="" class="modal-menu__logo">
-            </a>
-            <div class="modal-menu__close">
-                <img src="{{ asset('/images/catalog-menu__close.svg') }}" alt="">
-            </div>
-        </div>
-        <div class="modal-menu__content">
-            <div class="modal-menu__heading">Меню</div>
-            <nav class="mobile-modal__menu">
                 <x-menu::base-menu-component code="main" parent-css="menu"/>
             </nav>
-        </div>
-    </div>
 
-    <div class="mobile-menu">
-        <div class="mobile-menu__container container">
-            <a href="/" class="mobile-menu__item menu-home current">
-                <div class="main-img">
-                    <img src="{{ asset('/images/mobile-menu__home.svg') }}" alt="">
-                </div>
-                <p>Главная</p>
-            </a>
-            <div class="mobile-menu__item menu-catalog">
-                <div class="catalog-img">
-                    <img src="{{ asset('/images/mobile-menu__catalog.svg') }}" alt="">
-                </div>
-                <p>Каталог</p>
-            </div>
-            <div class="menu-cart mobile-menu__item">
-                <a href="{{ route('cart.index') }}" class="cart-link">
-                    <x-shop::cart-count/>
-                    <img src="{{ asset('/images/mobile-menu__basket.svg') }}" alt="">
-                    <p>Корзина</p>
-                </a>
-            </div>
-            <div class="mobile-menu__item menu-list">
-                <div class="list-img">
-                    <img src="{{ asset('/images/mobile-menu__menu.svg') }}" alt="">
-                </div>
-                <p>Меню</p>
+            <div class="burger-menu__contacts">
+                <a href="tel:{{settings('phone')}}" class="phone">{{settings('phone')}}</a>
+                <a href="tel:{{settings('phone2')}}" class="phone">{{settings('phone2')}}</a>
+                <a href="mailto:{{settings('emailPublic')}}" class="mail">{{settings('emailPublic')}}</a>
             </div>
         </div>
+        <div class="burger-menu__shadow"></div>
     </div>
     <main class="content">
         @yield('app.content')
