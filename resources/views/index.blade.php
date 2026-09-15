@@ -18,7 +18,7 @@
     @module('services')
         <x-services::homepage-services/>
     @endmodule
-    <section class="about">
+    <section class="about" id="about">
         <div class="about__container container">
             <div class="section-heading">
                 <div class="section-name">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" id="advantages">
         <div class="container">
             <div class="section-heading">
                 <div class="section-name">

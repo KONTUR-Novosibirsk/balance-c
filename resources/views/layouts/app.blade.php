@@ -157,7 +157,7 @@
     <main class="content">
         @yield('app.content')
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-feedback">
             <div class="footer-feedback__heading">
                 {!! settings('feedback') !!}

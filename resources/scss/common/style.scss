@@ -40,9 +40,11 @@ dd {
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
+html{
+    scroll-behavior: smooth;
+}
 body {
     min-height: 100vh;
-    scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     line-height: 1.5;
 }
@@ -107,6 +109,7 @@ html.lock {
 }
 section{
     margin-bottom: 120px;
+    scroll-margin-top: 60px;
 }
 h1 {
     font-weight: 600;
