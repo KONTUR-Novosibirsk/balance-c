@@ -1,7 +1,7 @@
 @use "/resources/scss/common/variables";
 
 .banner{
-    padding: 266px 0 459px;
+    padding: 266px 0;
     color: #ffffff;
 
     &-content{
@@ -9,6 +9,20 @@
         p{
             font-size: 20px;
             color: #ffffff;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner{
+        padding: 142px 0;
+    }
+    .banner-content {
+        max-width: 520px;
+
+        p{
+            font-size: 16px;
         }
     }
 }
