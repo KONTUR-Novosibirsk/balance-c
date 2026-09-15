@@ -51,7 +51,7 @@
                             </svg>
                             </span>
                            <div class="phone__additional">
-                               <a href="tel:{{settings('phone')}}" class="phone">{{settings('phone')}}</a>
+                               <a href="tel:{{settings('phone2')}}" class="phone">{{settings('phone2')}}</a>
                            </div>
                         </div>
                         <a href="mailto:{{settings('emailPublic')}}" class="mail">{{settings('emailPublic')}}</a>

@@ -1,0 +1,19 @@
+@use "/resources/scss/common/variables";
+
+@media (hover: hover){
+    .header-menu li a:hover{
+        color: variables.$AdditionalColorText;
+    }
+    .header-contacts__content a:hover{
+        color: variables.$AdditionalColorText;
+    }
+    .btn:hover{
+        background: variables.$HoverColor;
+    }
+    .services-item__link:hover{
+        background: #E5622A;
+    }
+    .footer-menu ul li a:hover{
+        color: variables.$AdditionalColorText;
+    }
+}

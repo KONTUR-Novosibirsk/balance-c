@@ -8,15 +8,6 @@
     p{
         color: #ffffff;
     }
-    h5 {
-        font-size: 18px;
-        font-family: variables.$FontFamily;
-        font-style: normal;
-        margin: 0 0 30px;
-        font-weight: 700;
-        line-height: normal;
-        color: #FFF;
-    }
 }
 .footer-feedback{
     max-width: 925px;
@@ -61,6 +52,7 @@
             a{
                 font-weight: 400;
                 font-size: 16px;
+                transition: variables.$time;
             }
         }
     }

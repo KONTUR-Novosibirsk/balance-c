@@ -49,6 +49,12 @@
         }
         li{
             margin-bottom: 0;
+
+            a{
+                font-weight: 400;
+                font-size: 16px;
+                transition: variables.$time;
+            }
         }
     }
 
@@ -65,14 +71,17 @@
             transform: translateY(-50%);
 
         }
-
+        a{
+            display: block;
+            transition: variables.$time;
+        }
         .phone-more{
             position: absolute;
             top: 50%;
             right: 18px;
             transform: translateY(-50%);
             cursor: pointer;
-            transition: variables.$time;
+
 
             &.active{
                 transform:  translateY(-50%) rotate(-180deg);
@@ -83,7 +92,7 @@
 .phone{
     font-weight: 700;
     font-size: 16px;
-    line-height: 100%;
+    line-height: normal;
     white-space: nowrap;
 
     &__additional{
@@ -93,7 +102,7 @@
 .mail{
     font-weight: 400;
     font-size: 16px;
-    line-height: 100%;
+    line-height: normal;
     letter-spacing: 0%;
     text-decoration: underline;
     text-decoration-style: dotted;

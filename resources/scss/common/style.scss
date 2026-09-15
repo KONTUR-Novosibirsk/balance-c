@@ -187,6 +187,7 @@ ul {
     text-transform: uppercase;
     color: #ffffff;
     background: variables.$ButtonColor;
+    transition: variables.$time;
 }
 .section-heading{
     display: grid;
