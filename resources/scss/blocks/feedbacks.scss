@@ -1,9 +1,14 @@
 @use "/resources/scss/common/variables";
 
-#feedback-popup {
-    width: 420px;
-}
+
 .feedback-popup {
+    &__heading{
+        text-align: center;
+
+        h2{
+            font-size: 40px;
+        }
+    }
     &__items{
         display: grid;
         grid-template-columns: 1fr 1fr 236px;
@@ -63,9 +68,57 @@
     color: rgba(255,255,255,0.8);
 }
 
+#feedback-popup {
+    width: 100%;
+    max-width: 640px;
+    border-radius: 12px;
+    padding: 48px;
 
+    .f-button.is-close-button{
+        top: 25px;
+        right: 25px;
+        color: #D3E0DD;
+    }
+    .feedback-popup__items{
+        grid-template-columns: 1fr;
+    }
+
+    .feedback-popup__item input,
+    .feedback-popup__item textarea{
+        background: #F8F8F8;
+        border: 1px solid #F2F2F2;
+        color: variables.$MainColorText;
+
+        &::placeholder{
+            color: rgba(83, 83, 83, .8);
+        }
+    }
+    .feedback-popup__privacy{
+        color: rgba(83, 83, 83, .8);
+    }
+    .checkbox-box{
+        border: 1px solid variables.$AdditionalColorText
+    }
+    .checkbox-checkmark{
+        background: variables.$AdditionalColorText;
+        border-radius: 4px;
+
+        svg{
+            path{
+                stroke: #ffffff;
+            }
+        }
+    }
+}
 @media (max-width: 768px) {
     .feedback-popup__items{
         grid-template-columns: 1fr;
+    }
+
+    .feedback-popup__heading h2{
+        font-size: 32px;
+    }
+    #feedback-popup{
+        padding: 20px;
     }
 }

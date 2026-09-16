@@ -5,7 +5,7 @@
             <div class="banner-content">
                 {!! iblock()->getById(1)?->elements[0]?->description !!}
 
-                <button class="btn">
+                <button class="btn" data-fancybox data-src="#feedback-popup">
                     Рассчитать стоимость
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="4" fill="white" fill-opacity="0.16"/>

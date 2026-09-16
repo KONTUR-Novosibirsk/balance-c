@@ -1,7 +1,7 @@
 <?php
 return [
-    'name' => 'callback',
-    'title' => 'Консультация',
+    'name' => 'calculate',
+    'title' => 'Рассчитать стоимость',
     'form' => [
         'name' => [
             'type' => 'input',
@@ -20,6 +20,12 @@ return [
             'label' => 'Телефон',
             'placeholder' => 'Номер телефона',
             'rules' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:9',
+        ],
+        'text' => [
+            'type' => 'textarea',
+            'label' => 'Комментарий',
+            'placeholder' => 'Комментарий',
+            'rules' => 'nullable|string|max:550',
         ],
         'policy' => [
             'type' => 'policy',

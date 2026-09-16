@@ -25,6 +25,7 @@ vue_apps.forEach(function (el) {
     vueApp.component('QuestionFormComponent', defineAsyncComponent(() => import('./components/Questions/QuestionFormComponent.vue')))
     vueApp.component('ReviewFormComponent', defineAsyncComponent(() => import('./components/Reviews/ReviewFormComponent.vue')))
     vueApp.component('FeedbackFormComponent', defineAsyncComponent(() => import('./components/Feedback/FeedbackFormComponent.vue')))
+    vueApp.component('PopupFormComponent', defineAsyncComponent(() => import('./components/Feedback/PopupFormComponent.vue')))
     vueApp.use(pinia).use(directives).mount(el);
 });
 

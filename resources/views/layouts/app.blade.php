@@ -199,8 +199,10 @@
         </form>
     </div>
     <div id="feedback-popup" style="display: none;" class="vue_app">
-        <feedback-form-component
-                privacy-policy-link="{{ route('page.show', settings('policy_page', default: 1)) }}"></feedback-form-component>
+        <popup-form-component
+                privacy-policy-link="{{ route('page.show', settings('policy_page', default: 1)) }}"
+                agreement-link="{{ route('page.show', settings('agreement_page', default: 1)) }}"
+                personal-data-link="{{ route('page.show', settings('personal_page', default: 1)) }}"></popup-form-component>
     </div>
 </div>
 </body>
