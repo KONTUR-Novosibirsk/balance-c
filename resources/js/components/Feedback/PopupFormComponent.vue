@@ -56,6 +56,7 @@ export default {
     data() {
         return {
             name: 'calculate',
+            goal: 'lead_popup',
             form: {
                 name: null,
                 text: null,

@@ -48,6 +48,7 @@ export default {
     data() {
         return {
             name: 'callback',
+            goal: 'lead_form',
             form: {
                 name: null,
                 email: null,
