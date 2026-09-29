@@ -6,7 +6,7 @@
                 {!! iblock()->getById(1)?->elements[0]?->description !!}
 
                 <button class="btn" data-fancybox data-src="#feedback-popup">
-                    Рассчитать стоимость
+                    Узнать стоимость
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="4" fill="white" fill-opacity="0.16"/>
                         <path d="M14.5 13.5V15.5H23.09L13.5 25.09L14.91 26.5L24.5 16.91V25.5H26.5V13.5H14.5Z" fill="white"/>
