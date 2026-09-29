@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="canonical" href="{{ url()->current() }}" />
+    <link rel="canonical" href="{{ preg_replace('#^(https?://)www\.#i', '$1', url()->current()) }}" />
     <link rel="icon" type="image/x-icon" href="{{ asset('/' . settings('favicon', default: 'default-favicon.ico')) }}">
     @if(seo()->metaData()->getDescription())
         <meta name="description" content="{{ seo()->metaData()->getDescription() }}">

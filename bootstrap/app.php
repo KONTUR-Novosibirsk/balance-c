@@ -12,6 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
+        $middleware->prepend(\App\Http\Middleware\CanonicalHost::class);
         $middleware->appendToGroup('dashboard', [
             \App\Http\Middleware\HandleInertiaRequests::class,
             \Kontur\Dashboard\App\Middleware\AdminMiddleware::class,
