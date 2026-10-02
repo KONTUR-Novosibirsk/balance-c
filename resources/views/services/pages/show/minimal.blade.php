@@ -10,5 +10,8 @@
         <div class="ck-content">
             {!! $service->content !!}
         </div>
+        <div class="ck-content">
+            {!! $service->description !!}
+        </div>
     </div>
 @endsection
